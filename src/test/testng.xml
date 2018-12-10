@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="测试套件" verbose="1" >
+    <test name="简单测试">
+        <parameter name="add1" value="3"/>
+        <parameter name="add2" value="2"/>
+        <parameter name="result" value="5"/>
+        <!--<groups>-->
+            <!--<run>-->
+                <!--<exclude name="异常"/>-->
+                <!--<include name="功能测试"/>-->
+            <!--</run>-->
+        <!--</groups>-->
+        <classes>
+            <!--<class name="FirstTest"/>-->
+            <!--<class name="FixtureTest"/>-->
+            <class name="daily.Daily"/>
+                <!--<methods>-->
+                    <!--<include name="testCase3"/>-->
+                    <!--<include name="testCase1"/>-->
+                    <!--<include name="testCase2"/>-->
+                <!--</methods>-->
+        </classes>
+    </test>
+</suite>
